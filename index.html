@@ -1,0 +1,140 @@
+<html>
+<style>
+
+	body {
+	/*url("https://gophishtest.s3.amazonaws.com/phishbackground.jpg")*/
+		background: #222;
+		color: white;
+		font-family: consolas, sans-serif;
+	}
+	
+	/* Bottom navigation */
+	.navbar {
+		 background: #222;
+ 		 overflow: hidden;
+ 		 position: fixed;
+		 bottom: 0;
+ 		 width: 100%;
+ 		 padding: 5;
+	}
+	
+	/* Form box size*/
+	form {
+  		border: 3px solid #f1f1f1;
+  		width: 50%
+	}
+	
+	/* Full-width inputs */
+	input[type=text], input[type=password] {
+ 		width: 100%;
+ 		padding: 10px 20px;
+ 		margin: 8px 0;
+ 		display: inline-block;
+ 		border: 1px solid #ccc;
+ 		box-sizing: border-box;
+	}
+
+	/* Set a style for all buttons */
+	button {
+ 		 background-color: #4CAF50;
+ 		 color: white;
+		  padding: 14px 20px;
+ 		 margin: 8px 0;
+		  border: none;
+		  cursor: pointer;
+		  width: 100%;
+	}
+	
+	/* Add a hover effect for buttons */
+	button:hover {
+		  opacity: 0.8;
+	}
+
+
+	/* Center the icon image inside this container */
+	.imgcontainer {
+ 		 text-align: center;
+ 		 margin: 24px 0 12px 0;
+	}
+
+	/* Icon image */
+	img.avatar {
+		  width: 20%;
+ 		 border-radius: 50%;
+	}
+
+	/* Add padding to containers */
+	.container {
+		padding: 16px;
+ 		text-align: left;
+	}
+
+	/* The "Forgot password" text */
+	span.psw {
+		color: #000;
+ 		float: right;
+ 		padding-right: 5px;
+	}
+
+	/* Change styles for span and cancel button on extra small screens */
+	@media screen and (max-width: 300px) {
+ 	 span.psw {
+   		 display: block;
+    	 float: none;
+ 	 }
+}
+</style>
+<script>
+
+function myFunction() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("my-demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "https://novuzkyt9l.execute-api.us-east-1.amazonaws.com/default/gophishtest", true);
+    xhttp.send();
+
+}
+
+</script>
+<body>
+
+
+<div class="navbar">
+  <a href="/contact.html">Contact</a>
+  <a href="/references.html">References</a>
+</div>
+
+
+<center><h1>Welcome to <span id="my-demo">Go Phish!</span></h1></center>
+
+<div align="center">
+<form action="action_page.php" method="post">
+<div class="imgcontainer">
+    <img src="https://gophishtest.s3.amazonaws.com/logo2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="button" onclick="myFunction()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  
+  <div class="container" style="background-color:#fff">
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form></div>
+
+<br><br><br>
+
+</body>
+</html>
