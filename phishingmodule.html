@@ -22,7 +22,7 @@
   cursor: pointer;
   padding: 15px 15px;
   font-size: 17px;
-  width: 50%;
+  width: 33.33%;
 }
 
 .tablink:hover {
@@ -37,7 +37,8 @@
 }
 
 
-#PhishingModule {background-color: red;}
+#PhishingModule {background-color: blue;}
+#ModuleHome {background-color: red;}
 #Dashboard {background-color: green;}
 
 </style>
@@ -45,7 +46,8 @@
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('PhishingModule', this, 'red')" id="defaultOpen">Phishing Module</button>
+<button class="tablink" onclick="openPage('PhishingModule', this, 'blue')" id="defaultOpen">Phishing Module</button>
+<button class="tablink" onclick="location.href='./dashboard.html'">Module Home</button>
 <button class="tablink" onclick="openPage('Dashboard', this, 'green')">Dashboard</button>
 <div class="container"></div>
 
@@ -53,6 +55,10 @@
 <div id="PhishingModule" class="tabcontent">
   <h3>Phishing</h3>
 </div>
+
+<div id="ModuleHome" class="tabcontent">
+</div>
+
 
 
 <div id="Dashboard" class="tabcontent">
