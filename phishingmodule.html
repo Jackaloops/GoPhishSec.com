@@ -1,8 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title> Phishing Module </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./assets/css/dashstyle.css"> -->
+  <style>
+  body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  padding: 85px 20px;
+  height: 100%;
+}
+
+
+#PhishingModule {background-color: red;}
+#Dashboard {background-color: green;}
+
+</style>
+    <title>Phishing Module</title>
 </head>
 <body>
-<h1>Phishing Module</h1>
+
+<button class="tablink" onclick="openPage('PhishingModule', this, 'red')" id="defaultOpen">Phishing Module</button>
+<button class="tablink" onclick="openPage('Dashboard', this, 'green')">Dashboard</button>
+<div class="container"></div>
+
+
+<div id="PhishingModule" class="tabcontent">
+  <h3>Phishing</h3>
+</div>
+
+
+<div id="Dashboard" class="tabcontent">
+  <h3>Dashboard</h3>
+</div>
+
+
+<script>
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/vendors/amazon-cognito-identity.min.js"></script>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/products.js"></script>
+    
 </body>
 </html>
