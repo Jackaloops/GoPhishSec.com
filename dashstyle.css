@@ -1,0 +1,181 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  font-family: 'Roboto Condensed', sans serif;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 20px;
+  width: 33.33%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  padding: 85px 20px;
+  height: 100%;
+}
+
+/* When the window is smaller than 1200px the width of the container adapts to the window width and as the block can't fit anymore,
+they rearrange to fewer columns.  */
+#container {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual grid boxes */
+
+.block1 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./phishingmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block1:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block2 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./socmedmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block2:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+ 
+.block3 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./iotmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block3:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block4 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./passwordsecmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block4:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block5 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./devicesecmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block5:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block6 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./internetsecmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block6:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block7 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./privacymodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block7:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+.block8 {
+  width: 235px;
+  height: 235px;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 25px;
+  background: url("./cyberthreatsmodule.png");
+  box-shadow: 0px 10px 20px black;
+}
+
+/* Button pressed effect */ 
+.block8:active {
+  box-shadow: 0px 3px  #000;
+  transform: translateY(4px);
+}
+
+/* Style of titles of modules */
+h3 {
+  text-shadow: 1px 1px 2px #ea4d67, 0 0 25px #0a2239, 0 0 6px #0a2239;
+  
+
+}
+
+
+#Modules {background-color: #53A2BE;}
+#Dashboard {background-color: #53A2BE;}
+#Contact {background-color: #53A2BE;}
