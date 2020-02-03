@@ -9,8 +9,7 @@
   
     <title>Dashboard</title>
     
-    <script>
-            
+    <script>      
     function submitToAPI(e) {
        e.preventDefault();
        var URL = "https://lpmh317p59.execute-api.us-east-1.amazonaws.com/test/contact-us";
@@ -46,10 +45,11 @@
           email : email,
           desc : desc
         };
-
+	</script>
+    </script>
        $.ajax({
          type: "POST",
-         url : "https://abc1234.execute-api.us-east-1.amazonaws.com/01/contact",
+         url : "https://lpmh317p59.execute-api.us-east-1.amazonaws.com/test/contact-us",
          dataType: "json",
          crossDomain: "true",
          contentType: "application/json; charset=utf-8",
